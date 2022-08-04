@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            color: rgb(255, 42, 156)
+        }
+    </style>
+    <h1>Creacion de perfil</h1>
+    <fieldset>
+        <legend>Datos del usuario
+        </legend>
+        <p><input value="estudiante" readonly /></p>
+        <label for="nombre">nombre:</label>
+        <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre completo">
+        <p><label for="email"> correo electronico</label>
+            <input type="email" name="email" id="email" placeholder="ingrese su corre electronico">
+        </p>
+        <p>
+            <label for="edad">edad:</label>
+            <input type="text" name="edad" id="edad" placeholder="ingrese su edad">
+        </p>
+        <label for="seleccionable">nacionalidad</label>
+        <select name="seleccionable" id="seleccionable">
+            <option value="opción">opción</option>
+            <option value="español">español</option>
+            <option value="portugués">portugués</option>
+            <option value="brasilero">brasilero</option>
+            <option value="argetino">argetino</option>
+        </select>
+        <p><label for="seleccionable">Condición laboral</label>
+            <select name="seleccionable2" id="seleccionable2">
+        </p>
+        <option value="opción">opción</option>
+        <option value="desempleado">desempleado</option>
+        <option value="en búsqueda laboral">en búsqueda laboral</option>
+        <option value="trabajo part time">trabajo part time</option>
+        <option value="trabajo full time">trabajo full time</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>gustos personales</legend>
+        <p><label for="muscica"></label>
+            <input type="text" name="gustos musicales" id="nombre" placeholder="Gustos musicales">
+        </p>
+        <p><label for="comida"></label>
+            <input type="text" name="comidas" id="nombre" placeholder="comidas preferidas">
+        </p>
+        
+        <p>recordar datos de usuario<input type="checkbox" name="recordar" id="recordar" "></p>
+        <input type="submit" value="enviar">
+    </fieldset>
+</body>
+
+</html>
