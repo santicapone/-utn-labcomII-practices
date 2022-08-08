@@ -19,7 +19,7 @@
         <legend>Datos del usuario
         </legend>
         <p><input value="estudiante" readonly /></p>
-        <label for="nombre">nombre:</label>
+        <label for="nombre">nombre completo:</label>
         <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre completo">
         <p><label for="email"> correo electronico</label>
             <input type="email" name="email" id="email" placeholder="ingrese su corre electronico">
@@ -28,8 +28,8 @@
             <label for="edad">edad:</label>
             <input type="text" name="edad" id="edad" placeholder="ingrese su edad">
         </p>
-        <label for="seleccionable">nacionalidad</label>
-        <select name="seleccionable" id="seleccionable">
+        <label for="seleccionable">nacionalidad </label>
+        <select name="seleccionable" id="seleccionable" required>
             <option value="opción">opción</option>
             <option value="español">español</option>
             <option value="portugués">portugués</option>
@@ -37,7 +37,7 @@
             <option value="argetino">argetino</option>
         </select>
         <p><label for="seleccionable">Condición laboral</label>
-            <select name="seleccionable2" id="seleccionable2">
+            <select name="seleccionable2" id="seleccionable2"required>
         </p>
         <option value="opción">opción</option>
         <option value="desempleado">desempleado</option>
@@ -49,11 +49,18 @@
     <fieldset>
         <legend>gustos personales</legend>
         <p><label for="muscica"></label>
-            <input type="text" name="gustos musicales" id="nombre" placeholder="Gustos musicales">
+            <input type="text" name="gustos musicales" id="nombre" placeholder="Gustos musicales"required>
         </p>
-        <p><label for="comida"></label>
-            <input type="text" name="comidas" id="nombre" placeholder="comidas preferidas">
-        </p>
+        <br>
+            <select name="comida" id="comida">
+                <option value="comida">Otros</option>
+                <option value="">Milanesa con puré</option>
+                <option value="comida">Pastas</option>
+                <option value="comida">Asado</option>
+                <option value="comida">Pizza</option>
+                <option value="comida">Empanadas</option>
+            </select>
+            <br>
         
         <p>recordar datos de usuario<input type="checkbox" name="recordar" id="recordar" "></p>
         <input type="submit" value="enviar">
